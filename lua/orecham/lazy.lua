@@ -11,4 +11,15 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("orecham.plugins")
+require("lazy").setup({ { import = "orecham.plugins" }, { import = "orecham.plugins.lsp" } }, {
+  install = {
+    colorscheme = { "tokyonight" },
+  },
+  checker = {
+    enabled = true,
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
+  },
+})
