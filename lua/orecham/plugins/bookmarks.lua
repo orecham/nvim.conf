@@ -16,7 +16,10 @@ return {
       },
     });
 
-    -- Keymaps
+    local telescope = require("telescope")
+    telescope.load_extension("bookmarks")
+
+    -- set keymaps
     local keymap = vim.keymap -- for conciseness
 
     keymap.set("n", "mm", bookmarks.bookmark_toggle, { desc = "Toggle bookmark at current line" })
@@ -26,9 +29,6 @@ return {
     keymap.set("n", "mp", bookmarks.bookmark_prev, { desc = "Jump to previous bookmark in local buffer" })
     keymap.set("n", "ml", bookmarks.bookmark_list, { desc = "List all bookmarks" })
     keymap.set("n", "mx", bookmarks.bookmark_clear_all, { desc = "Clean all bookmarks globally" })
-
-    -- Telescope Integration
-    local telescope = require("telescope");
-    telescope.load_extension("bookmarks")
+    keymap.set("n", "<leader>fm", "<cmd>Telescope bookmarks list<cr>", { desc = "View bookmarks in current buffer" })
   end
 }
