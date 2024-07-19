@@ -1,3 +1,5 @@
+-- git markers
+
 return {
   "lewis6991/gitsigns.nvim",
   event = { "BufReadPre", "BufNewFile" },

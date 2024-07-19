@@ -1,3 +1,5 @@
+-- bookmark management
+
 return {
   "tomasky/bookmarks.nvim",
   dependencies = {

@@ -1,3 +1,5 @@
+-- tagbar integration
+
 return {
   "preservim/tagbar",
   config = function()
