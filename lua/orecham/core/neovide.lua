@@ -1,6 +1,6 @@
 if vim.g.neovide then
-  vim.g.neovide_scale_factor = 0.8
-  vim.g.neovide_transparency = 0.9
+  vim.g.neovide_scale_factor = 1.5
+  vim.g.neovide_transparency = 1.0
   vim.opt.guifont = { "Source Code Pro", ":h12" }
 end
 
