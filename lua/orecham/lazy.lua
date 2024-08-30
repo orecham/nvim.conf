@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup(
-  { { import = "orecham.plugins" }, { import = "orecham.plugins.lsp" } }, {
+  { { import = "orecham.plugins" }, { import = "orecham.plugins.lsp" }, { import = "orecham.colorscheme" } }, {
     checker = {
       enabled = true,
       notify = false,
