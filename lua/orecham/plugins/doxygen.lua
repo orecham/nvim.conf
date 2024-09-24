@@ -1,4 +1,5 @@
--- Doxygen helpers
+-- doxygen helpers
+
 return {
   "vim-scripts/DoxygenToolkit.vim",
 }

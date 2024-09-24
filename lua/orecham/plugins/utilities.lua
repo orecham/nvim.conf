@@ -1,6 +1,5 @@
--- Miscellaneous utility plugins
+-- miscellaneous utilities
 
 return {
-  "christoomey/vim-tmux-navigator",
   "elfenpiff/nvim-word-highlight",
 }

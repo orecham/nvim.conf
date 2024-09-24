@@ -1,4 +1,4 @@
--- notification and progress ui element
+-- notification and progress ui elements
 
 return {
   "j-hui/fidget.nvim",

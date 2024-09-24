@@ -1,3 +1,5 @@
+-- easy navigation within tmux
+
 return {
   "christoomey/vim-tmux-navigator",
   cmd = {
