@@ -43,5 +43,38 @@ return {
       },
       ft = { "markdown", "Avante" },
     },
+    config = function()
+      require('avante').setup({
+        mappings = {
+          diff = {
+            ours = "co",
+            theirs = "ct",
+            all_theirs = "ca",
+            both = "cb",
+            cursor = "cc",
+            next = "]x",
+            prev = "[x",
+          },
+          suggestion = {
+            accept = "<C-a>",
+            next = "<C-PageUp>",
+            prev = "<C-PageDown>",
+            dismiss = "<C-]>",
+          },
+          jump = {
+            next = "]]",
+            prev = "[[",
+          },
+          submit = {
+            normal = "<CR>",
+            insert = "<C-s>",
+          },
+          sidebar = {
+            switch_windows = "<Tab>",
+            reverse_switch_windows = "<S-Tab>",
+          },
+        },
+      })
+    end
   },
 }
