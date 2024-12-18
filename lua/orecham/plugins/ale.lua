@@ -13,5 +13,13 @@ return {
       typescript = { 'deno' },
       lua = { 'lua_language_server' }
     }
+
+    g.ale_pattern_options = {
+      ['\\.c$'] = { ale_enabled = 0 },
+      ['\\.cpp$'] = { ale_enabled = 0 },
+      ['\\.h$'] = { ale_enabled = 0 },
+      ['\\.hpp$'] = { ale_enabled = 0 },
+      ['\\.rs$'] = { ale_enabled = 0 },
+    }
   end
 }
