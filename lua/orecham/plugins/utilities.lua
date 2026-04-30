@@ -1,5 +1,5 @@
 -- miscellaneous utilities
 
 return {
-  "elfenpiff/nvim-word-highlight",
+  "RRethy/vim-illuminate",
 }
